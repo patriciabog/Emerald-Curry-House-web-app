@@ -15,6 +15,10 @@ nav{
   z-index: 10001;
 }
 
+.logoImg{
+  width: 12rem;
+  height: 3rem;
+}
 
 .navbar {
   padding: 10px 13%;
@@ -221,7 +225,7 @@ footer section{
   padding: 10px 13%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .company-info img{
