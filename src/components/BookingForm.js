@@ -31,7 +31,7 @@ const BookingForm = (props) => {
                             <input
                                 id='book-date'
                                 value={date}
-                                onChange={handleChange}
+                                onChange={(e) => handleChange}
                                 type="date"
                                 required
                             />
