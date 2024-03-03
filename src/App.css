@@ -192,8 +192,8 @@ input, label{
 }
 
 .menu-items{
-  /* height: 400px; */
-  width: 350px;
+  height: 480px;
+  width: 300px;
   background: #a9c8be;
   border-radius: 8px;
 }
