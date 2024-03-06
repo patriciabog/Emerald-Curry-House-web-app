@@ -5,6 +5,7 @@ const BookingForm = (props) => {
     const [times, setTimes] = useState("");
     const [guests, setGuests] = useState("");
     const [occasion, setOccasion] = useState("");
+    const [bookingSuccess, setBookingSuccess] = useState(false);
 
     const handleChange = (e) => {
         setDate(e.target.value);
@@ -18,11 +19,25 @@ const BookingForm = (props) => {
             guests: guests,
             occasion: occasion,
         });
+
+        const bookingSuccessful = true; // Change this based on your logic
+        setBookingSuccess(bookingSuccessful);
     }
+
+    
+
 
     return (
         <header>
             <section>
+                {/* Conditional rendering based on bookingSuccess state */}
+                {bookingSuccess ? (
+                    <div>
+                        <p>Booking successful! Thank you for choosing us.</p>
+                        {/* Additional content or redirection logic can go here */}
+                    </div>
+                ) : (
+
                 <form onSubmit={handleSubmit} action="">
                     <fieldset>
                         {/* For date selection */}
@@ -31,7 +46,7 @@ const BookingForm = (props) => {
                             <input
                                 id='book-date'
                                 value={date}
-                                onChange={(e) => handleChange}
+                                onChange={handleChange}
                                 type="date"
                                 required
                             />
@@ -86,6 +101,7 @@ const BookingForm = (props) => {
                         </div>
                     </fieldset>
                 </form>
+                )}
             </section>
         </header>
     );

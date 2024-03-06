@@ -18,7 +18,7 @@ const handleOrder = (id) => {
         if (result.isConfirmed) {
             Swal.fire({
                 title: "Order placed! ",
-                text: "You Menu has been ordered",
+                text: "You Menu has been processing",
                 icon: "success"
             });
         }
@@ -30,7 +30,7 @@ const handleOrder = (id) => {
         <div className='menu-container'>
             <div className='menu-header'>
                 <h2>
-                    This weeks specials!
+                    This week specials!
                     <button>Order Menu</button>
                 </h2>
             </div>
