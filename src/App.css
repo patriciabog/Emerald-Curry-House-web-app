@@ -2,6 +2,8 @@
 body{
   width: 100%;
   margin: 0 auto;
+  text-decoration: none;
+  list-style: none;
 }
 
 li{
@@ -246,8 +248,9 @@ footer ul{
   padding: 0;
 }
 
-footer ul li{
+footer ul li a{
   padding: 8px 0;
+  color: #000;
 }
 
 

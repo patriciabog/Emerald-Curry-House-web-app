@@ -9,11 +9,11 @@ const recipes = [
     },
     {
       id: 2,
-      title: "Bruchetta",
+      title: "Saag Paneer",
       price: 5.99,
       image: "https://i.ibb.co/317GqZv/Bruchetta.png",
       description:
-        "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
+        "Our Saag Paneer is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
     },
     {
       id: 3,

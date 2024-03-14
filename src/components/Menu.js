@@ -31,8 +31,8 @@ const handleOrder = (id) => {
             <div className='menu-header'>
                 <h2>
                     This week specials!
-                    <button>Order Menu</button>
                 </h2>
+                <button>Order Menu</button>
             </div>
             {/* menu cards */}
             <div className='cards'>
@@ -42,7 +42,7 @@ const handleOrder = (id) => {
                     <div className='menu-content'>
                         <div className='heading'>
                             <h5>{recipe.title}</h5>
-                            <p>{recipe.price}</p>
+                            <p>{recipe.price}€</p>
                         </div>
                         <p>{recipe.description}</p>
                         <button className='orderBtn' onClick={() => handleOrder(recipe.id)}>Order Now</button>
